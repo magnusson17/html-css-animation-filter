@@ -156,3 +156,91 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: sposta-top-white-12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sposta-top-white-12 {
+    0% {
+        left: 10%
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: sposta-bottom-white-12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sposta-bottom-white-12 {
+    0% {
+        right: 20%
+    }
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 20%
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: sposta-13-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sposta-13-1 {
+    0% {
+        left: 10%
+    }
+    25% {
+        left: 35%;
+    }
+    50% {
+        left: 60%
+    }
+    75% {
+        left: 85%
+    }
+    100% {
+        left: 110%
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: sposta-13-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sposta-13-2 {
+    0% {
+        right: 20%
+    }
+    25% {
+        right: 45%;
+    }
+    50% {
+        right: 80%
+    }
+    75% {
+        right: 100%
+    }
+    100% {
+        right: 20%
+    }
+}
