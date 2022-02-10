@@ -2,42 +2,131 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: background-color 3s;
 }
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: width 3s;
 }
+
+.ex-2-square:active {
+    width: 100%;
+}
+
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: border-radius 2s;
 }
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: opacity 3s;
 }
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: all 2s;
 }
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.ex-5-square:active {
+    width: 30px;
+    height: 30px;
+}
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: filter 2s, border-radius 2s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-8-img:hover {
+    filter: grayscale(100%);
+    border-radius: 30px;
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
+
+.ex-9-img:hover {
+    border-radius: 30px;
+    transform: scale(1.2);
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: rotation-75-100;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation-75-100 {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
