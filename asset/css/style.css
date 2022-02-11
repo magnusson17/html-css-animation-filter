@@ -204,19 +204,28 @@
 
 @keyframes sposta-13-1 {
     0% {
-        left: 10%
+        left: 10%;
+        top: -10px;
     }
     25% {
-        left: 35%;
+        left: calc(100% - 30px);
+        top: -10px;
     }
     50% {
-        left: 60%
+        left: calc(100% - 30px);
+        top: 100%;
     }
     75% {
-        left: 85%
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
     }
     100% {
-        left: 110%
+        left: 10%;
+        top: -10px;
     }
 }
 
@@ -229,18 +238,27 @@
 
 @keyframes sposta-13-2 {
     0% {
-        right: 20%
+        bottom: -10px;
+        right: 20%;
     }
     25% {
-        right: 45%;
+        right: calc(100% - 30px);
+        bottom: -10px;
     }
     50% {
-        right: 80%
+        right: calc(100% - 30px);
+        bottom: 100%;
     }
     75% {
-        right: 100%
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
     }
     100% {
-        right: 20%
+        bottom: -10px;
+        right: 20%;
     }
 }
